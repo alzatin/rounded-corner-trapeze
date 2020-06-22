@@ -8,6 +8,71 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.15487094088259784,
+            "y": 0.3278688524590164,
+            "uniqueID": 994467,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 1
+                },
+                {
+                    "name": "y",
+                    "ioValue": 1
+                }
+            ],
+            "currentEquation": "x + y"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.09575353871773522,
+            "y": 0.5311475409836066,
+            "uniqueID": 256669,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.24396336386344714,
+            "y": 0.5442622950819672,
+            "uniqueID": 538728,
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.1257285595337219,
+            "y": 0.7344262295081968,
+            "uniqueID": 177306,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9833472106577851,
@@ -15,6 +80,16 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 256669,
+            "ap2ID": 538728
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": "1"
 }
