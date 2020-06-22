@@ -4,32 +4,53 @@
     "x": 0,
     "y": 0,
     "uniqueID": 720091,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "corner radius ",
+            "ioValue": 3
+        },
+        {
+            "name": "Shape height",
+            "ioValue": 50
+        },
+        {
+            "name": "Shape width",
+            "ioValue": 100
+        },
+        {
+            "name": "Angle",
+            "ioValue": 10
+        }
+    ],
     "topLevel": true,
     "allAtoms": [
         {
             "atomType": "Equation",
             "name": "Equation",
-            "x": 0.15487094088259784,
-            "y": 0.3278688524590164,
+            "x": 0.18984179850124897,
+            "y": 0.2262295081967213,
             "uniqueID": 994467,
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 1
-                },
-                {
-                    "name": "y",
-                    "ioValue": 1
+                    "ioValue": 10
                 }
             ],
-            "currentEquation": "x + y"
+            "currentEquation": "x/2"
+        },
+        {
+            "atomType": "Input",
+            "name": "corner radius ",
+            "x": 0.013333333333333334,
+            "y": 0.3836065573770492,
+            "uniqueID": 302551,
+            "ioValues": []
         },
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.09575353871773522,
-            "y": 0.5311475409836066,
+            "x": 0.10324729392173189,
+            "y": 0.4524590163934426,
             "uniqueID": 256669,
             "ioValues": [
                 {
@@ -41,17 +62,17 @@
         {
             "atomType": "Translate",
             "name": "Translate",
-            "x": 0.24396336386344714,
-            "y": 0.5442622950819672,
+            "x": 0.32972522897585343,
+            "y": 0.360655737704918,
             "uniqueID": 538728,
             "ioValues": [
                 {
                     "name": "xDist",
-                    "ioValue": 0
+                    "ioValue": 5
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 5
                 },
                 {
                     "name": "zDist",
@@ -60,10 +81,73 @@
             ]
         },
         {
+            "atomType": "Input",
+            "name": "Shape height",
+            "x": 0.013333333333333334,
+            "y": 0.5770491803278689,
+            "uniqueID": 602452,
+            "ioValues": []
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.15736885928393007,
+            "y": 0.6131147540983606,
+            "uniqueID": 251637,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 10
+                },
+                {
+                    "name": "y",
+                    "ioValue": 10
+                }
+            ],
+            "currentEquation": "-x/2 + y"
+        },
+        {
+            "atomType": "Input",
+            "name": "Angle",
+            "x": 0.013333333333333334,
+            "y": 0.6852459016393443,
+            "uniqueID": 634872,
+            "ioValues": []
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.3172356369691923,
+            "y": 0.6327868852459017,
+            "uniqueID": 367742,
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 5
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Input",
+            "name": "Shape width",
+            "x": 0.013333333333333334,
+            "y": 0.7934426229508197,
+            "uniqueID": 963689,
+            "ioValues": []
+        },
+        {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.1257285595337219,
-            "y": 0.7344262295081968,
+            "x": 0.12406328059950042,
+            "y": 0.8131147540983608,
             "uniqueID": 177306,
             "ioValues": [
                 {
@@ -82,11 +166,74 @@
     ],
     "allConnectors": [
         {
+            "ap1Name": "result",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 994467,
+            "ap2ID": 538728
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 994467,
+            "ap2ID": 538728
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 302551,
+            "ap2ID": 256669
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 302551,
+            "ap2ID": 177306
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 302551,
+            "ap2ID": 994467
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 302551,
+            "ap2ID": 251637
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 256669,
             "ap2ID": 538728
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 602452,
+            "ap2ID": 251637
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 251637,
+            "ap2ID": 367742
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 177306,
+            "ap2ID": 367742
         }
     ],
     "fileTypeVersion": 1,
