@@ -7,72 +7,124 @@
     "ioValues": [
         {
             "name": "corner radius ",
-            "ioValue": 3
+            "ioValue": 5
         },
         {
             "name": "Shape height",
             "ioValue": 50
         },
         {
-            "name": "Shape width",
-            "ioValue": 100
-        },
-        {
             "name": "Angle",
             "ioValue": 10
+        },
+        {
+            "name": "Shape width",
+            "ioValue": 100
         }
     ],
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.13238967527060783,
+            "y": 0.16721311475409836,
+            "uniqueID": 256669,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 5
+                }
+            ]
+        },
+        {
             "atomType": "Equation",
             "name": "Equation",
-            "x": 0.18984179850124897,
-            "y": 0.2262295081967213,
+            "x": 0.19567027477102414,
+            "y": 0.12459016393442622,
             "uniqueID": 994467,
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 10
+                    "ioValue": 5
                 }
             ],
             "currentEquation": "x/2"
         },
         {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.18984179850124897,
+            "y": 0.23934426229508196,
+            "uniqueID": 251637,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 5
+                },
+                {
+                    "name": "y",
+                    "ioValue": 50
+                }
+            ],
+            "currentEquation": "-x/2 + y"
+        },
+        {
             "atomType": "Input",
             "name": "corner radius ",
             "x": 0.013333333333333334,
-            "y": 0.3836065573770492,
+            "y": 0.3770491803278689,
             "uniqueID": 302551,
             "ioValues": []
         },
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.10324729392173189,
-            "y": 0.4524590163934426,
-            "uniqueID": 256669,
+            "x": 0.12905911740216486,
+            "y": 0.35737704918032787,
+            "uniqueID": 177306,
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 5
                 }
             ]
         },
         {
             "atomType": "Translate",
             "name": "Translate",
-            "x": 0.32972522897585343,
-            "y": 0.360655737704918,
+            "x": 0.33638634471273937,
+            "y": 0.17704918032786887,
             "uniqueID": 538728,
             "ioValues": [
                 {
                     "name": "xDist",
-                    "ioValue": 5
+                    "ioValue": 2.5
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 5
+                    "ioValue": 2.5
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.3222314737718568,
+            "y": 0.3836065573770492,
+            "uniqueID": 367742,
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 2.5
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 47.5
                 },
                 {
                     "name": "zDist",
@@ -89,51 +141,12 @@
             "ioValues": []
         },
         {
-            "atomType": "Equation",
-            "name": "Equation",
-            "x": 0.15736885928393007,
-            "y": 0.6131147540983606,
-            "uniqueID": 251637,
-            "ioValues": [
-                {
-                    "name": "x",
-                    "ioValue": 10
-                },
-                {
-                    "name": "y",
-                    "ioValue": 10
-                }
-            ],
-            "currentEquation": "-x/2 + y"
-        },
-        {
             "atomType": "Input",
             "name": "Angle",
             "x": 0.013333333333333334,
             "y": 0.6852459016393443,
             "uniqueID": 634872,
             "ioValues": []
-        },
-        {
-            "atomType": "Translate",
-            "name": "Translate",
-            "x": 0.3172356369691923,
-            "y": 0.6327868852459017,
-            "uniqueID": 367742,
-            "ioValues": [
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 5
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0
-                }
-            ]
         },
         {
             "atomType": "Input",
@@ -144,19 +157,6 @@
             "ioValues": []
         },
         {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.12406328059950042,
-            "y": 0.8131147540983608,
-            "uniqueID": 177306,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 10
-                }
-            ]
-        },
-        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9833472106577851,
@@ -165,6 +165,13 @@
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 256669,
+            "ap2ID": 538728
+        },
         {
             "ap1Name": "result",
             "ap2Name": "xDist",
@@ -178,6 +185,20 @@
             "ap2Primary": false,
             "ap1ID": 994467,
             "ap2ID": 538728
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 994467,
+            "ap2ID": 367742
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 251637,
+            "ap2ID": 367742
         },
         {
             "ap1Name": "number or geometry",
@@ -211,8 +232,8 @@
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": 256669,
-            "ap2ID": 538728
+            "ap1ID": 177306,
+            "ap2ID": 367742
         },
         {
             "ap1Name": "number or geometry",
@@ -220,20 +241,6 @@
             "ap2Primary": false,
             "ap1ID": 602452,
             "ap2ID": 251637
-        },
-        {
-            "ap1Name": "result",
-            "ap2Name": "yDist",
-            "ap2Primary": false,
-            "ap1ID": 251637,
-            "ap2ID": 367742
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 177306,
-            "ap2ID": 367742
         }
     ],
     "fileTypeVersion": 1,
