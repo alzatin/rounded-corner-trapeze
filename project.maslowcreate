@@ -6,7 +6,7 @@
     "uniqueID": 720091,
     "ioValues": [
         {
-            "name": "corner radiusÂ ",
+            "name": "corner radiusÃÂ ",
             "ioValue": 5
         },
         {
@@ -92,7 +92,7 @@
         },
         {
             "atomType": "Input",
-            "name": "corner radiusÂ ",
+            "name": "corner radiusÃÂ ",
             "x": 0.013333333333333334,
             "y": 0.3770491803278689,
             "uniqueID": 302551,
@@ -242,15 +242,15 @@
                     "ioValue": ""
                 },
                 {
+                    "name": "3D shape 4",
+                    "ioValue": 10
+                },
+                {
                     "name": "3D shape 1",
                     "ioValue": 10
                 },
                 {
                     "name": "3D shape 3",
-                    "ioValue": 10
-                },
-                {
-                    "name": "3D shape 4",
                     "ioValue": 10
                 }
             ],
